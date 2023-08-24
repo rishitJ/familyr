@@ -1,0 +1,57 @@
+<html>
+  <head>
+    <title>Image recognition</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
+    <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js" target="_blank"></script>
+
+   <link rel="stylesheet" href="style.css">
+  
+<head>
+<body>
+    <div class="container">
+
+        <center>
+            <h3>My Family Recognition</h3>
+            <br><br>
+
+            <p style="font-size: 23px;">Model is trained to identify the following family members</p>
+            <br>
+            <h4>Rishit</h4>
+            <hr>
+            <h4>Bua</h4>
+            <hr>
+            <h4>Papa</h4>
+            <hr>
+            <h4>Mum</h4>
+            <hr>
+            <h4>GrandPa</h4>
+            <hr>
+            <h4>GrandMa</h4>
+            <hr>
+            <br>
+            <label>Webcam View - </label>
+            <br><br>
+            <div id="camera">
+
+            </div>
+            <br><br>
+            <div id="result">
+
+            </div>
+            <br><br>
+            <button id="capture image" onclick="capture_img()" class="btn btn-warning">Capture Image</button>
+            <br><br>
+            <button id="identify_image" onclick="identify_img()"class="btn btn-warning">Indentify Image</button>
+      <br><br>
+      <p style="font-size: 22px;">Object :  </p>
+      <p style="font-size: 22px;">Accuracy :  </p>
+        </center>
+    </div>
+    <script src="main.js"></script>
+</body>
+</head>
